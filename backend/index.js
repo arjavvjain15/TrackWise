@@ -1,10 +1,10 @@
 const express = require('express');
 const cors = require('cors');
-const dotenv = require('dotenv');
 const connectDb = require('../backend/db/db');
 const userRouter = require('./router/userRouter')
 const expenseRouter = require('./router/expenseRouter')
 const app = express();
+require('dotenv').config();
 
 app.use(cors());
 app.use(express.json());
